@@ -1,0 +1,18 @@
+{
+  "ssg": "astro",
+  "mode": "hosted",
+  "build": {
+    "install_command": "npm install",
+    "build_command": "npm run build",
+    "output_path": "dist",
+    "preserved_paths": "",
+    "preserveOutput": false,
+    "includeGit": true,
+    "environment_variables": [
+      {
+        "key": "ROSEYPROD",
+        "value": false
+      }
+    ]
+  }
+}

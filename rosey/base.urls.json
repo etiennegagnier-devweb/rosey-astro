@@ -1,0 +1,59 @@
+{
+  "version": 2,
+  "keys": {
+    "404.html": {
+      "original": "404.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "blog/a-new-post-name/index.html": {
+      "original": "blog/a-new-post-name/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "blog/a-test-page/index.html": {
+      "original": "blog/a-test-page/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "blog/bobo-rosso/index.html": {
+      "original": "blog/bobo-rosso/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "blog/index.html": {
+      "original": "blog/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "index.html": {
+      "original": "index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "tags/Testing/index.html": {
+      "original": "tags/Testing/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "tags/bob ross/index.html": {
+      "original": "tags/bob ross/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "tags/video/index.html": {
+      "original": "tags/video/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    }
+  }
+}
