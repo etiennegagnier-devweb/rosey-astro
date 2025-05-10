@@ -4,8 +4,9 @@ import Icon from "../utility/icon";
 import { generateRoseyId } from "../../../rosey-connector/helpers/component-helper";
 const pagePath = Astro.url.pathname || "page";
 
-// Strip any existing locale prefix from the path
-const cleanPath = pagePath.replace(/^\/[a-z]{2}-[A-Z]{2}/, '');
+// Get the current locale from the path
+const currentLocale = pagePath.split('/')[1]?.match(/^[a-z]{2}-[A-Z]{2}$/) ? pagePath.split('/')[1] : null;
+const basePath = currentLocale ? pagePath.replace(`/${currentLocale}`, '') : pagePath;
 ---
 
 <header
@@ -64,10 +65,10 @@ const cleanPath = pagePath.replace(/^\/[a-z]{2}-[A-Z]{2}/, '');
         <ul class="lang-list" x-show="langopen" x-cloak x-transition>
           {
             header.locales.map((locale) => {
-              const localePath = locale.code === null ? cleanPath : `/${locale.code}${cleanPath}`;
+              const localePath = locale.code === null ? basePath : `/${locale.code}${basePath}`;
               return (
                 <li>
-                  <a href={`${localePath}`} data-locale={locale.code} data-path={cleanPath}>
+                  <a href={localePath} data-locale={locale.code} data-path={basePath}>
                     <span>{locale.name}</span>
                     <img
                       class="w-[32px]"
