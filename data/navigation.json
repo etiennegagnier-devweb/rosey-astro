@@ -21,7 +21,7 @@
         "flag": "/images/flags/france-flag.png"
       },
       {
-        "code": null,
+        "code": "/",
         "name": "English",
         "flag": "/images/flags/usa-flag.jpeg"
       }
