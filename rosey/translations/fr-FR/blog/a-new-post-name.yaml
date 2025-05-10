@@ -3,18 +3,18 @@ _inputs:
   $:
     type: object
     comment: "[See
-      blog/a-new-post-name/](https://poised-plain.cloudvent.net/blog/a-new-post\
-      -name/)"
+      blog/a-new-post-name/](https://actual-teacher.cloudvent.net/blog/a-new-po\
+      st-name/)"
     options:
       place_groups_below: false
       groups:
         - heading: Still to translate (fr-FR)
           comment: Text to translate on
-            [blog/a-new-post-name/](https://poised-plain.cloudvent.net/blog/a-new-post-name/)
+            [blog/a-new-post-name/](https://actual-teacher.cloudvent.net/blog/a-new-post-name/)
           inputs: []
         - heading: Already translated (fr-FR)
           comment: Text already translated on
-            [blog/a-new-post-name/](https://poised-plain.cloudvent.net/blog/a-new-post-name/)
+            [blog/a-new-post-name/](https://actual-teacher.cloudvent.net/blog/a-new-post-name/)
           inputs:
             - a-test-page
             - a-test-post-vid
@@ -33,24 +33,24 @@ _inputs:
     type: text
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-new-post-name/#:~:text=A%\
-      20Test%20Page)"
+      page](https://actual-teacher.cloudvent.net/blog/a-new-post-name/#:~:text=\
+      A%20Test%20Page)"
   a-test-post-vid:
     label: A test post vid
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-new-post-name/#:~:text=A%\
-      20test%20post%20vid)"
+      page](https://actual-teacher.cloudvent.net/blog/a-new-post-name/#:~:text=\
+      A%20test%20post%20vid)"
   blog:
     label: Blog
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-new-post-name/#:~:text=Bl\
-      og)"
+      page](https://actual-teacher.cloudvent.net/blog/a-new-post-name/#:~:text=\
+      Blog)"
   markdown:don't-over-do-it-—-be-careful-be-careful-always-start-with-a-clean-brush-in-a-light-area-and-work-outward-we-planned-this-son-of-a-gun-right-from-the-beginning-people-are-so-excited-when-they-see-this-happen-everybody-will-see-nature-through-different-eyes:
     label: Don’t over do it — be careful. Be careful....
     hidden: false
@@ -66,8 +66,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-new-post-name/#:~:text=Do\
-      n%E2%80%99t%20over%20do,through%20different%20eyes)"
+      page](https://actual-teacher.cloudvent.net/blog/a-new-post-name/#:~:text=\
+      Don%E2%80%99t%20over%20do,through%20different%20eyes)"
     context:
       open: false
       title: Untranslated Text
@@ -91,8 +91,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-new-post-name/#:~:text=To\
-      day%E2%80%99s%20such%20a,this%20whole%20technique)"
+      page](https://actual-teacher.cloudvent.net/blog/a-new-post-name/#:~:text=\
+      Today%E2%80%99s%20such%20a,this%20whole%20technique)"
     context:
       open: false
       title: Untranslated Text
@@ -102,53 +102,53 @@ _inputs:
         believe you can do. Get it to where you want it, and leave it alone.
         That’s the fun part of this whole technique.
   minutes:
-    label: 1 minutes
+    label: 0 minutes
     hidden: false
     type: textarea
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-new-post-name/#:~:text=1%\
-      20minutes)"
+      page](https://actual-teacher.cloudvent.net/blog/a-new-post-name/#:~:text=\
+      0%20minutes)"
   recent-posts:
     label: Recent Posts
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-new-post-name/#:~:text=Re\
-      cent%20Posts)"
+      page](https://actual-teacher.cloudvent.net/blog/a-new-post-name/#:~:text=\
+      Recent%20Posts)"
   rss-feed:
     label: RSS Feed
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-new-post-name/#:~:text=RS\
-      S%20Feed)"
+      page](https://actual-teacher.cloudvent.net/blog/a-new-post-name/#:~:text=\
+      RSS%20Feed)"
   testing:
     label: Testing
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-new-post-name/#:~:text=Te\
-      sting)"
+      page](https://actual-teacher.cloudvent.net/blog/a-new-post-name/#:~:text=\
+      Testing)"
   video:
     label: Video
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-new-post-name/#:~:text=Vi\
-      deo)"
+      page](https://actual-teacher.cloudvent.net/blog/a-new-post-name/#:~:text=\
+      Video)"
   words:
-    label: 326 words
+    label: 90 words
     hidden: false
     type: textarea
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-new-post-name/#:~:text=32\
-      6%20words)"
+      page](https://actual-teacher.cloudvent.net/blog/a-new-post-name/#:~:text=\
+      90%20words)"
 a-test-page: Une page test
 a-test-post-vid: Un post-vidéo test
 blog: " Blog "

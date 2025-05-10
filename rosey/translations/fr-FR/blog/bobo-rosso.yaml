@@ -3,17 +3,17 @@ _inputs:
   $:
     type: object
     comment: "[See
-      blog/bobo-rosso/](https://poised-plain.cloudvent.net/blog/bobo-rosso/)"
+      blog/bobo-rosso/](https://actual-teacher.cloudvent.net/blog/bobo-rosso/)"
     options:
       place_groups_below: false
       groups:
         - heading: Still to translate (fr-FR)
           comment: Text to translate on
-            [blog/bobo-rosso/](https://poised-plain.cloudvent.net/blog/bobo-rosso/)
+            [blog/bobo-rosso/](https://actual-teacher.cloudvent.net/blog/bobo-rosso/)
           inputs: []
         - heading: Already translated (fr-FR)
           comment: Text already translated on
-            [blog/bobo-rosso/](https://poised-plain.cloudvent.net/blog/bobo-rosso/)
+            [blog/bobo-rosso/](https://actual-teacher.cloudvent.net/blog/bobo-rosso/)
           inputs:
             - a-snippet-in-the-middle-of-markdown-content
             - a-test-page
@@ -34,8 +34,8 @@ _inputs:
     type: textarea
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/bobo-rosso/#:~:text=A%20sni\
-      ppet%20in,of%20markdown%20content)"
+      page](https://actual-teacher.cloudvent.net/blog/bobo-rosso/#:~:text=A%20s\
+      nippet%20in,of%20markdown%20content)"
     context:
       open: false
       title: Untranslated Text
@@ -47,31 +47,31 @@ _inputs:
     type: text
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/bobo-rosso/#:~:text=A%20Tes\
-      t%20Page)"
+      page](https://actual-teacher.cloudvent.net/blog/bobo-rosso/#:~:text=A%20T\
+      est%20Page)"
   a-test-post-vid:
     label: A test post vid
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/bobo-rosso/#:~:text=A%20tes\
-      t%20post%20vid)"
+      page](https://actual-teacher.cloudvent.net/blog/bobo-rosso/#:~:text=A%20t\
+      est%20post%20vid)"
   blog:
     label: Blog
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/bobo-rosso/#:~:text=Blog)"
+      page](https://actual-teacher.cloudvent.net/blog/bobo-rosso/#:~:text=Blog)"
   bob-ross-test:
     label: Bob Ross Test
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/bobo-rosso/#:~:text=Bob%20R\
-      oss%20Test)"
+      page](https://actual-teacher.cloudvent.net/blog/bobo-rosso/#:~:text=Bob%2\
+      0Ross%20Test)"
   markdown:everybody-should-have-a-friend-just-sorta-make-these-things-up-in-your-mind-and-let-them-drop-in-help-them-make-a-happy-buck-or-two-sort-of-an-orangy-yellowish-color-water-breaks-and-it-churns-and-it-has-fun!:
     label: Everybody should have a friend. Just sorta...
     hidden: false
@@ -87,8 +87,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/bobo-rosso/#:~:text=Everybo\
-      dy%20should%20have,it%20has%20fun!)"
+      page](https://actual-teacher.cloudvent.net/blog/bobo-rosso/#:~:text=Every\
+      body%20should%20have,it%20has%20fun!)"
     context:
       open: false
       title: Untranslated Text
@@ -111,8 +111,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/bobo-rosso/#:~:text=We%E2%8\
-      0%99ll%20make%20some,leave%20these%20spots!)"
+      page](https://actual-teacher.cloudvent.net/blog/bobo-rosso/#:~:text=We%E2\
+      %80%99ll%20make%20some,leave%20these%20spots!)"
     context:
       open: false
       title: Untranslated Text
@@ -122,52 +122,53 @@ _inputs:
         outside shape. Always follow the angles. Don’t just cover it all up —
         leave these spots!
   minutes:
-    label: 1 minutes
+    label: 0 minutes
     hidden: false
     type: textarea
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/bobo-rosso/#:~:text=1%20min\
-      utes)"
+      page](https://actual-teacher.cloudvent.net/blog/bobo-rosso/#:~:text=0%20m\
+      inutes)"
   recent-posts:
     label: Recent Posts
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/bobo-rosso/#:~:text=Recent%\
-      20Posts)"
+      page](https://actual-teacher.cloudvent.net/blog/bobo-rosso/#:~:text=Recen\
+      t%20Posts)"
   rss-feed:
     label: RSS Feed
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/bobo-rosso/#:~:text=RSS%20F\
-      eed)"
+      page](https://actual-teacher.cloudvent.net/blog/bobo-rosso/#:~:text=RSS%2\
+      0Feed)"
   testing:
     label: Testing
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/bobo-rosso/#:~:text=Testing\
-      )"
+      page](https://actual-teacher.cloudvent.net/blog/bobo-rosso/#:~:text=Testi\
+      ng)"
   video:
     label: Video
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/bobo-rosso/#:~:text=Video)"
+      page](https://actual-teacher.cloudvent.net/blog/bobo-rosso/#:~:text=Video\
+      )"
   words:
-    label: 326 words
+    label: 90 words
     hidden: false
     type: textarea
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/bobo-rosso/#:~:text=326%20w\
-      ords)"
+      page](https://actual-teacher.cloudvent.net/blog/bobo-rosso/#:~:text=90%20\
+      words)"
 a-snippet-in-the-middle-of-markdown-content: Un extrait au milieu du contenu Markdown. Changed post monorepo :)
 a-test-page: Une page test
 a-test-post-vid: Un post-vidéo test

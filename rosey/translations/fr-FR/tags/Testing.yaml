@@ -2,17 +2,17 @@ urlTranslation: tags/Testing/index.html
 _inputs:
   $:
     type: object
-    comment: "[See tags/Testing/](https://poised-plain.cloudvent.net/tags/Testing/)"
+    comment: "[See tags/Testing/](https://actual-teacher.cloudvent.net/tags/Testing/)"
     options:
       place_groups_below: false
       groups:
         - heading: Still to translate (fr-FR)
           comment: Text to translate on
-            [tags/Testing/](https://poised-plain.cloudvent.net/tags/Testing/)
+            [tags/Testing/](https://actual-teacher.cloudvent.net/tags/Testing/)
           inputs: []
         - heading: Already translated (fr-FR)
           comment: Text already translated on
-            [tags/Testing/](https://poised-plain.cloudvent.net/tags/Testing/)
+            [tags/Testing/](https://actual-teacher.cloudvent.net/tags/Testing/)
           inputs:
             - a-test-page
             - blog
@@ -24,30 +24,30 @@ _inputs:
     type: text
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/tags/Testing/#:~:text=A%20Test%2\
-      0Page)"
+      page](https://actual-teacher.cloudvent.net/tags/Testing/#:~:text=A%20Test\
+      %20Page)"
   blog:
     label: Blog
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/tags/Testing/#:~:text=Blog)"
+      page](https://actual-teacher.cloudvent.net/tags/Testing/#:~:text=Blog)"
   rss-feed:
     label: RSS Feed
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/tags/Testing/#:~:text=RSS%20Feed\
-      )"
+      page](https://actual-teacher.cloudvent.net/tags/Testing/#:~:text=RSS%20Fe\
+      ed)"
   testing:
     label: Testing
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/tags/Testing/#:~:text=Testing)"
+      page](https://actual-teacher.cloudvent.net/tags/Testing/#:~:text=Testing)"
 a-test-page: Une page test
 blog: " Blog "
 rss-feed: " Flux RSS "

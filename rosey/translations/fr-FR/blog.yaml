@@ -2,16 +2,17 @@ urlTranslation: blog/index.html
 _inputs:
   $:
     type: object
-    comment: "[See blog/](https://poised-plain.cloudvent.net/blog/)"
+    comment: "[See blog/](https://actual-teacher.cloudvent.net/blog/)"
     options:
       place_groups_below: false
       groups:
         - heading: Still to translate (fr-FR)
-          comment: Text to translate on [blog/](https://poised-plain.cloudvent.net/blog/)
+          comment: Text to translate on
+            [blog/](https://actual-teacher.cloudvent.net/blog/)
           inputs: []
         - heading: Already translated (fr-FR)
           comment: Text already translated on
-            [blog/](https://poised-plain.cloudvent.net/blog/)
+            [blog/](https://actual-teacher.cloudvent.net/blog/)
           inputs:
             - a-test-page
             - a-test-post-vid
@@ -27,54 +28,55 @@ _inputs:
     type: text
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/#:~:text=A%20Test%20Page)"
+      page](https://actual-teacher.cloudvent.net/blog/#:~:text=A%20Test%20Page)"
   a-test-post-vid:
     label: A test post vid
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/#:~:text=A%20test%20post%20\
-      vid)"
+      page](https://actual-teacher.cloudvent.net/blog/#:~:text=A%20test%20post%\
+      20vid)"
   blog:
     label: Blog
     hidden: false
     type: text
     options: {}
-    comment: "[See on page](https://poised-plain.cloudvent.net/blog/#:~:text=Blog)"
+    comment: "[See on page](https://actual-teacher.cloudvent.net/blog/#:~:text=Blog)"
   bob-ross:
     label: Bob ross
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/#:~:text=Bob%20ross)"
+      page](https://actual-teacher.cloudvent.net/blog/#:~:text=Bob%20ross)"
   bob-ross-test:
     label: Bob Ross Test
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/#:~:text=Bob%20Ross%20Test)"
+      page](https://actual-teacher.cloudvent.net/blog/#:~:text=Bob%20Ross%20Tes\
+      t)"
   rss-feed:
     label: RSS Feed
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/#:~:text=RSS%20Feed)"
+      page](https://actual-teacher.cloudvent.net/blog/#:~:text=RSS%20Feed)"
   testing:
     label: Testing
     hidden: false
     type: text
     options: {}
-    comment: "[See on page](https://poised-plain.cloudvent.net/blog/#:~:text=Testing)"
+    comment: "[See on page](https://actual-teacher.cloudvent.net/blog/#:~:text=Testing)"
   video:
     label: Video
     hidden: false
     type: text
     options: {}
-    comment: "[See on page](https://poised-plain.cloudvent.net/blog/#:~:text=Video)"
+    comment: "[See on page](https://actual-teacher.cloudvent.net/blog/#:~:text=Video)"
 a-test-page: Une page test
 a-test-post-vid: Un post-vidéo test
 blog: " Blog "

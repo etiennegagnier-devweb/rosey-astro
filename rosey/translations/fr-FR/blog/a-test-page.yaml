@@ -3,17 +3,18 @@ _inputs:
   $:
     type: object
     comment: "[See
-      blog/a-test-page/](https://poised-plain.cloudvent.net/blog/a-test-page/)"
+      blog/a-test-page/](https://actual-teacher.cloudvent.net/blog/a-test-page/\
+      )"
     options:
       place_groups_below: false
       groups:
         - heading: Still to translate (fr-FR)
           comment: Text to translate on
-            [blog/a-test-page/](https://poised-plain.cloudvent.net/blog/a-test-page/)
+            [blog/a-test-page/](https://actual-teacher.cloudvent.net/blog/a-test-page/)
           inputs: []
         - heading: Already translated (fr-FR)
           comment: Text already translated on
-            [blog/a-test-page/](https://poised-plain.cloudvent.net/blog/a-test-page/)
+            [blog/a-test-page/](https://actual-teacher.cloudvent.net/blog/a-test-page/)
           inputs:
             - a-test-page
             - a-test-post-vid
@@ -40,23 +41,24 @@ _inputs:
     type: text
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=A%20Te\
-      st%20Page)"
+      page](https://actual-teacher.cloudvent.net/blog/a-test-page/#:~:text=A%20\
+      Test%20Page)"
   a-test-post-vid:
     label: A test post vid
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=A%20te\
-      st%20post%20vid)"
+      page](https://actual-teacher.cloudvent.net/blog/a-test-page/#:~:text=A%20\
+      test%20post%20vid)"
   blog:
     label: Blog
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=Blog)"
+      page](https://actual-teacher.cloudvent.net/blog/a-test-page/#:~:text=Blog\
+      )"
   markdown:a-new-test-paragraph-that-has-to-be-long-enough-words-but-end-in-a-certain-way:
     label: A new. test paragraph that has to be long ...
     hidden: false
@@ -72,8 +74,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=A%20ne\
-      w,a%20certain)"
+      page](https://actual-teacher.cloudvent.net/blog/a-test-page/#:~:text=A%20\
+      new,a%20certain)"
     context:
       open: false
       title: Untranslated Text
@@ -95,8 +97,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=All%20\
-      you%20have,There%20we%20are)"
+      page](https://actual-teacher.cloudvent.net/blog/a-test-page/#:~:text=All%\
+      20you%20have,There%20we%20are)"
     context:
       open: false
       title: Untranslated Text
@@ -119,8 +121,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=Anothe\
-      r%20code%20block:)"
+      page](https://actual-teacher.cloudvent.net/blog/a-test-page/#:~:text=Anot\
+      her%20code%20block:)"
   markdown:here's-a-new-paragraph-with-a-link-in-the-content-editor:
     label: Here’s a new paragraph with a link in the ...
     hidden: false
@@ -136,8 +138,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=Here%E\
-      2%80%99s%20a%20new,the%20content%20editor)"
+      page](https://actual-teacher.cloudvent.net/blog/a-test-page/#:~:text=Here\
+      %E2%80%99s%20a%20new,the%20content%20editor)"
     context:
       open: false
       title: Untranslated Text
@@ -159,8 +161,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=Mix%20\
-      your%20color,it%20all%20day)"
+      page](https://actual-teacher.cloudvent.net/blog/a-test-page/#:~:text=Mix%\
+      20your%20color,it%20all%20day)"
     context:
       open: false
       title: Untranslated Text
@@ -184,8 +186,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=Take%2\
-      0your%20time,just%20playing%20here)"
+      page](https://actual-teacher.cloudvent.net/blog/a-test-page/#:~:text=Take\
+      %20your%20time,just%20playing%20here)"
     context:
       open: false
       title: Untranslated Text
@@ -210,8 +212,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=We%E2%\
-      80%99ll%20throw%20some,make%20in%20school)"
+      page](https://actual-teacher.cloudvent.net/blog/a-test-page/#:~:text=We%E\
+      2%80%99ll%20throw%20some,make%20in%20school)"
     context:
       open: false
       title: Untranslated Text
@@ -235,8 +237,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=We%20h\
-      ave%20a,to%20use%20it)"
+      page](https://actual-teacher.cloudvent.net/blog/a-test-page/#:~:text=We%2\
+      0have%20a,to%20use%20it)"
     context:
       open: false
       title: Untranslated Text
@@ -258,8 +260,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=We%20h\
-      ave%20all,be%20your%20guide)"
+      page](https://actual-teacher.cloudvent.net/blog/a-test-page/#:~:text=We%2\
+      0have%20all,be%20your%20guide)"
     context:
       open: false
       title: Untranslated Text
@@ -268,60 +270,61 @@ _inputs:
         we haven’t even done anything to it yet. Let’s make some happy little
         clouds in our world. Let your heart be your guide.
   minutes:
-    label: 1 minutes
+    label: 0 minutes
     hidden: false
     type: textarea
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=1%20mi\
-      nutes)"
+      page](https://actual-teacher.cloudvent.net/blog/a-test-page/#:~:text=0%20\
+      minutes)"
   recent-posts:
     label: Recent Posts
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=Recent\
-      %20Posts)"
+      page](https://actual-teacher.cloudvent.net/blog/a-test-page/#:~:text=Rece\
+      nt%20Posts)"
   rss-feed:
     label: RSS Feed
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=RSS%20\
-      Feed)"
+      page](https://actual-teacher.cloudvent.net/blog/a-test-page/#:~:text=RSS%\
+      20Feed)"
   testing:
     label: Testing
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=Testin\
-      g)"
+      page](https://actual-teacher.cloudvent.net/blog/a-test-page/#:~:text=Test\
+      ing)"
   video:
     label: Video
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=Video)"
+      page](https://actual-teacher.cloudvent.net/blog/a-test-page/#:~:text=Vide\
+      o)"
   words:
-    label: 326 words
+    label: 90 words
     hidden: false
     type: textarea
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=326%20\
-      words)"
+      page](https://actual-teacher.cloudvent.net/blog/a-test-page/#:~:text=90%2\
+      0words)"
   yay-we-support-snippets-now!:
     label: Yay, we support snippets now!
     hidden: false
     type: textarea
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=Yay,%2\
-      0we%20support%20snippets%20now!)"
+      page](https://actual-teacher.cloudvent.net/blog/a-test-page/#:~:text=Yay,\
+      %20we%20support%20snippets%20now!)"
 a-test-page: Une page test
 a-test-post-vid: Un post-vidéo test
 blog: " Blog "
