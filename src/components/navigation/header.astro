@@ -64,7 +64,7 @@ const pagePath = Astro.url.pathname || "page";
               const localePath = locale.code === "default" ? `${pagePath}` : `/${locale.code}${pagePath}`;
               return (
                 <li>
-                  <a href={`${localePath}`} data-locale={locale.code}>
+                  <a href={`${localePath}`} data-locale={locale.code} data-path={pagePath}>
                     <span>{locale.name}</span>
                     <img
                       class="w-[32px]"
