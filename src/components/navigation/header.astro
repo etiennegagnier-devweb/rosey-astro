@@ -3,6 +3,9 @@ import { header } from "../../../data/navigation.json";
 import Icon from "../utility/icon";
 import { generateRoseyId } from "../../../rosey-connector/helpers/component-helper";
 const pagePath = Astro.url.pathname || "page";
+
+// Strip any existing locale prefix from the path
+const cleanPath = pagePath.replace(/^\/[a-z]{2}-[A-Z]{2}/, '');
 ---
 
 <header
@@ -61,10 +64,10 @@ const pagePath = Astro.url.pathname || "page";
         <ul class="lang-list" x-show="langopen" x-cloak x-transition>
           {
             header.locales.map((locale) => {
-              const localePath = locale.code === "default" ? `${pagePath}` : `/${locale.code}${pagePath}`;
+              const localePath = locale.code === null ? cleanPath : `/${locale.code}${cleanPath}`;
               return (
                 <li>
-                  <a href={`${localePath}`} data-locale={locale.code} data-path={pagePath}>
+                  <a href={`${localePath}`} data-locale={locale.code} data-path={cleanPath}>
                     <span>{locale.name}</span>
                     <img
                       class="w-[32px]"
