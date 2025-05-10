@@ -62,6 +62,7 @@ const pagePath = Astro.url.pathname || "page";
           {
             header.locales.map((locale) => {
               const localePath = locale.code === null ? '' : `/${locale.code}`;
+              console.log('Current locale:', locale);
               return (
                 <li>
                   <a href={`${localePath}${pagePath}`}>
