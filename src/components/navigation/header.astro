@@ -65,10 +65,18 @@ const basePath = currentLocale ? pagePath.replace(`/${currentLocale}`, '') : pag
         <ul class="lang-list" x-show="langopen" x-cloak x-transition>
           {
             header.locales.map((locale) => {
-              const localePath = locale.code === null ? basePath : `/${locale.code}${basePath}`;
+              let localePath: string; 
+              let localExists: string;
+              if(locale.code){
+                localExists = 'true';
+                localePath = `/${locale.code}${basePath}`;
+              } else {
+                localExists = 'false';
+                localePath = basePath;
+              }
               return (
                 <li>
-                  <a href={localePath} data-locale={locale.code} data-path={basePath}>
+                  <a href={localePath} data-locale={locale.code} data-path={basePath} data-localExists={localExists}>
                     <span>{locale.name}</span>
                     <img
                       class="w-[32px]"
