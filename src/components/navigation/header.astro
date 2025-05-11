@@ -13,7 +13,10 @@ const basePath = currentLocale ? pagePath.replace(`/${currentLocale}`, '') : pag
   class="header"
   x-data="{ open: false, langopen: false }"
   x-transition
-  style={`background-color: ${header.background_color}; color: ${header.color};`}>
+  style={`background-color: ${header.background_color}; color: ${header.color};`}
+  data-current-path={pagePath}
+  data-current-locale={currentLocale}
+  data-base-path={basePath}>
   <div class="header__container">
     <nav class="header__nav">
       <a class="header__logo-link" href={header.logo_url}>
@@ -65,18 +68,15 @@ const basePath = currentLocale ? pagePath.replace(`/${currentLocale}`, '') : pag
         <ul class="lang-list" x-show="langopen" x-cloak x-transition>
           {
             header.locales.map((locale) => {
-              let localePath: string; 
-              let localExists: string;
-              if(locale.code){
-                localExists = 'true';
-                localePath = basePath;
-              } else {
-                localExists = 'false';
-                localePath = basePath;
-              }
+              const localePath = locale.code === null ? basePath : `/${locale.code}${basePath}`;
               return (
                 <li>
-                  <a href={localePath} data-locale={locale.code} data-path={basePath} data-localExists={localExists}>
+                  <a 
+                    href={localePath} 
+                    data-locale={locale.code} 
+                    data-path={basePath}
+                    data-locale-path={localePath}
+                    data-is-null={locale.code === null}>
                     <span>{locale.name}</span>
                     <img
                       class="w-[32px]"
