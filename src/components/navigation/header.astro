@@ -72,7 +72,7 @@ const basePath = currentLocale ? pagePath.replace(`/${currentLocale}`, '') : pag
               return (
                 <li>
                   <a 
-                    href={localePath} 
+                    href={`${localePath}`} 
                     data-locale={locale.code} 
                     data-path={basePath}
                     data-locale-path={localePath}
