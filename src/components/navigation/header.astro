@@ -72,7 +72,8 @@ const pagePath = Astro.url.pathname || "page";
               return (
                 <li>
                   <a 
-                    href={localePath}>
+                    href={localePath}
+                    data-rosey-ignore>
                     <span>{locale.name}</span>
                     <img
                       class="w-[32px]"
