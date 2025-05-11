@@ -2,11 +2,28 @@
 import { header } from "../../../data/navigation.json";
 import Icon from "../utility/icon";
 import { generateRoseyId } from "../../../rosey-connector/helpers/component-helper";
-const pagePath = Astro.url.pathname || "page";
 
-// Get the current locale from the path
-const currentLocale = pagePath.split('/')[1]?.match(/^[a-z]{2}-[A-Z]{2}$/) ? pagePath.split('/')[1] : null;
-const basePath = currentLocale ? pagePath.replace(`/${currentLocale}`, '') : pagePath;
+const url = new URL(Astro.url);
+const path = url.pathname;
+const segments = path.split('/').filter(Boolean);
+const firstSegment = segments[0];
+
+// Check if first segment is a locale
+const isLocale = firstSegment?.match(/^[a-z]{2}-[A-Z]{2}$/);
+const currentLocale = isLocale ? firstSegment : null;
+
+// Function to get path without locale
+function getPathWithoutLocale() {
+  if (!isLocale) return path;
+  return '/' + segments.slice(1).join('/');
+}
+
+// Function to get path with locale
+function getPathWithLocale(localeCode) {
+  const pathWithoutLocale = getPathWithoutLocale();
+  if (!localeCode) return pathWithoutLocale;
+  return `/${localeCode}${pathWithoutLocale}`;
+}
 ---
 
 <header
@@ -14,9 +31,8 @@ const basePath = currentLocale ? pagePath.replace(`/${currentLocale}`, '') : pag
   x-data="{ open: false, langopen: false }"
   x-transition
   style={`background-color: ${header.background_color}; color: ${header.color};`}
-  data-current-path={pagePath}
-  data-current-locale={currentLocale}
-  data-base-path={basePath}>
+  data-current-path={path}
+  data-current-locale={currentLocale}>
   <div class="header__container">
     <nav class="header__nav">
       <a class="header__logo-link" href={header.logo_url}>
@@ -68,20 +84,10 @@ const basePath = currentLocale ? pagePath.replace(`/${currentLocale}`, '') : pag
         <ul class="lang-list" x-show="langopen" x-cloak x-transition>
           {
             header.locales.map((locale) => {
-              let finalPath;
-              if (locale.code === null) {
-                finalPath = basePath;
-              } else {
-                finalPath = `/${locale.code}${basePath}`;
-              }
+              const path = getPathWithLocale(locale.code);
               return (
                 <li>
-                  <a 
-                    href={finalPath} 
-                    data-locale={locale.code} 
-                    data-path={basePath}
-                    data-locale-path={finalPath}
-                    data-is-null={locale.code === null}>
+                  <a href={path}>
                     <span>{locale.name}</span>
                     <img
                       class="w-[32px]"
