@@ -289,6 +289,69 @@ _inputs:
     comment:
       When selected this removes the page from your sitemap and adds the noindex
       robots meta tag
+  flex_columns:
+    type: array
+    options:
+      structures:
+        values:
+          - label: Flex Column
+            icon: view_column
+            value:
+              _bookshop_name: flexColumn
+              width:
+              grow:
+              shrink:
+              basis:
+              order:
+              widths:
+                mobile:
+                tablet:
+                desktop:
+              hide:
+              alignSelf:
+              padding:
+              margin:
+              backgroundColor:
+              className:
+              shadow:
+              rounded:
+              border:
+              borderColor:
+              animationDelay:
+          - label: Flex Columns
+            icon: view_week
+            value:
+              _bookshop_name: flexColumns
+              columns:
+              gap:
+              rowGap:
+              columnGap:
+              direction:
+              wrap:
+              alignItems:
+              justifyContent:
+              alignContent:
+              fluid:
+              maxWidth:
+              padding:
+              margin:
+              backgroundColor:
+              className:
+              breakpoints:
+                mobile:
+                tablet:
+                desktop:
+              reverseOnMobile:
+              animateEntrance:
+              animationDelay:
+              staggered:
+      preview:
+        text:
+          - key: _bookshop_name
+        icon:
+          - key: _bookshop_name
+        subtext:
+          - key: className
 
 _snippets_imports:
   mdx: true
