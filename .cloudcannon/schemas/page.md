@@ -9,4 +9,5 @@ seo:
   open_graph_type:
   no_index: false
 content_blocks: []
+flex_columns: []
 ---
