@@ -81,5 +81,4 @@ content_blocks:
       alt_text: An image
     flipped: true
     button:
-flex_columns: []
 ---
