@@ -1,0 +1,237 @@
+---
+// FlexColumns.astro
+// A flexible column system based on flexbox with extensive customization options
+
+interface Props {
+  // Layout configuration
+  columns?: number | { mobile?: number; tablet?: number; desktop?: number };
+  gap?: string | { x?: string; y?: string };
+  rowGap?: string;
+  columnGap?: string;
+  
+  // Direction options
+  direction?: 'row' | 'column' | 'row-reverse' | 'column-reverse';
+  wrap?: 'nowrap' | 'wrap' | 'wrap-reverse';
+  
+  // Alignment options
+  alignItems?: 'start' | 'center' | 'end' | 'stretch' | 'baseline';
+  justifyContent?: 'start' | 'center' | 'end' | 'between' | 'around' | 'evenly';
+  alignContent?: 'start' | 'center' | 'end' | 'between' | 'around' | 'stretch';
+  
+  // Container options
+  fluid?: boolean;
+  maxWidth?: string;
+  
+  // Styling options
+  padding?: string;
+  margin?: string;
+  backgroundColor?: string;
+  className?: string;
+  
+  // Responsive behavior
+  breakpoints?: { mobile?: string; tablet?: string; desktop?: string };
+  reverseOnMobile?: boolean;
+  
+  // Animation
+  animateEntrance?: boolean;
+  animationDelay?: number;
+  staggered?: boolean;
+}
+
+// Default props
+const {
+  columns = { mobile: 1, tablet: 2, desktop: 3 },
+  gap = "2rem",
+  rowGap,
+  columnGap,
+  direction = "row",
+  wrap = "wrap",
+  alignItems = "stretch",
+  justifyContent = "start",
+  alignContent = "stretch",
+  fluid = false,
+  maxWidth = "1200px",
+  padding = "0",
+  margin = "0",
+  backgroundColor,
+  className = "",
+  breakpoints = { mobile: "576px", tablet: "768px", desktop: "1024px" },
+  reverseOnMobile = false,
+  animateEntrance = false,
+  animationDelay = 0,
+  staggered = true,
+} = Astro.props;
+
+// Process column configuration
+const colConfig = typeof columns === 'number' 
+  ? { mobile: 1, tablet: Math.min(2, columns), desktop: columns }
+  : { mobile: 1, tablet: 2, desktop: 3, ...columns };
+
+// Process gap configuration
+const gapX = typeof gap === 'string' ? gap : gap.x || '2rem';
+const gapY = typeof gap === 'string' ? gap : gap.y || '2rem';
+
+// Apply specific row/column gaps if provided
+const finalRowGap = rowGap || gapY;
+const finalColumnGap = columnGap || gapX;
+
+// Map justifyContent values to flex values
+const justifyMap = {
+  'start': 'flex-start',
+  'end': 'flex-end',
+  'center': 'center',
+  'between': 'space-between',
+  'around': 'space-around',
+  'evenly': 'space-evenly'
+};
+
+// Map alignItems values to flex values
+const alignMap = {
+  'start': 'flex-start',
+  'end': 'flex-end',
+  'center': 'center',
+  'stretch': 'stretch',
+  'baseline': 'baseline'
+};
+
+// Generate unique ID for the component instance
+const flexId = `flex-${Math.random().toString(36).substring(2, 9)}`;
+
+// Calculate column widths (accounting for gaps)
+const getColumnWidth = (colCount) => {
+  if (colCount === 1) return '100%';
+  return `calc((100% - (${colCount - 1} * var(--column-gap))) / ${colCount})`;
+};
+---
+
+<div 
+  id={flexId} 
+  class:list={[
+    'flex-columns',
+    { 'flex-animate': animateEntrance },
+    { 'flex-fluid': fluid },
+    { 'flex-reverse-mobile': reverseOnMobile },
+    className
+  ]}
+>
+  <slot />
+</div>
+
+<style define:vars={{
+  '--max-width': maxWidth,
+  '--padding': padding,
+  '--margin': margin,
+  '--bg-color': backgroundColor || 'transparent',
+  '--row-gap': finalRowGap,
+  '--column-gap': finalColumnGap,
+  '--direction': direction,
+  '--wrap': wrap,
+  '--align-items': alignMap[alignItems] || 'stretch',
+  '--justify-content': justifyMap[justifyContent] || 'flex-start',
+  '--align-content': alignMap[alignContent] || 'stretch',
+  '--animation-delay': `${animationDelay}ms`,
+  '--mobile-breakpoint': breakpoints.mobile,
+  '--tablet-breakpoint': breakpoints.tablet,
+  '--desktop-breakpoint': breakpoints.desktop,
+  '--mobile-width': getColumnWidth(colConfig.mobile),
+  '--tablet-width': getColumnWidth(colConfig.tablet),
+  '--desktop-width': getColumnWidth(colConfig.desktop),
+}}>
+  .flex-columns {
+    display: flex;
+    flex-direction: var(--direction);
+    flex-wrap: var(--wrap);
+    gap: var(--row-gap) var(--column-gap);
+    align-items: var(--align-items);
+    justify-content: var(--justify-content);
+    align-content: var(--align-content);
+    padding: var(--padding);
+    margin: var(--margin);
+    background-color: var(--bg-color);
+    width: 100%;
+  }
+  
+  .flex-fluid {
+    width: 100%;
+  }
+  
+  .flex-columns:not(.flex-fluid) {
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Child element sizing based on column count */
+  .flex-columns > * {
+    width: var(--mobile-width);
+    margin: 0;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: calc(var(--tablet-breakpoint) - 1px)) {
+    .flex-reverse-mobile {
+      flex-direction: column-reverse;
+    }
+    
+    .flex-columns.flex-reverse-mobile > * {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: var(--tablet-breakpoint)) {
+    .flex-columns > * {
+      width: var(--tablet-width);
+    }
+  }
+  
+  @media (min-width: var(--desktop-breakpoint)) {
+    .flex-columns > * {
+      width: var(--desktop-width);
+    }
+  }
+  
+  /* Animation styles */
+  .flex-animate > * {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  .flex-animate.in-view > * {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+
+<script define:vars={{ flexId, animateEntrance, staggered }}>
+  // Only add animation script if animation is enabled
+  if (animateEntrance) {
+    // Set animation order for child elements
+    const flexElement = document.getElementById(flexId);
+    if (flexElement) {
+      const children = Array.from(flexElement.children);
+      
+      if (staggered) {
+        // Apply staggered delay to children
+        children.forEach((child, index) => {
+          child.style.transitionDelay = `${index * 100}ms`;
+        });
+      }
+
+      // Intersection Observer for animation trigger
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('in-view');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+      
+      observer.observe(flexElement);
+    }
+  }
+</script>

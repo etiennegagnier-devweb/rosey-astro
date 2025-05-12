@@ -1,0 +1,38 @@
+---
+interface Props {
+  width?: string;
+  grow?: boolean;
+  shrink?: boolean;
+  class?: string;
+}
+
+const {
+  width,
+  grow = false,
+  shrink = true,
+  class: className = '',
+} = Astro.props;
+---
+
+<div class:list={[
+  'column',
+  grow && 'column--grow',
+  shrink && 'column--shrink',
+  className
+]} style={width ? `flex-basis: ${width}` : undefined}>
+  <slot />
+</div>
+
+<style>
+  .column {
+    min-width: 0; /* Prevents flex items from overflowing */
+  }
+
+  .column--grow {
+    flex-grow: 1;
+  }
+
+  .column--shrink {
+    flex-shrink: 1;
+  }
+</style> 
