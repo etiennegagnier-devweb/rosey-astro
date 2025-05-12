@@ -1,0 +1,120 @@
+name: Flex Columns
+description: A flexible column system based on flexbox with extensive customization options
+icon: view_week
+fields:
+  - name: columns
+    type: object
+    description: Number of columns for different breakpoints
+    fields:
+      - name: mobile
+        type: number
+        description: Number of columns on mobile
+      - name: tablet
+        type: number
+        description: Number of columns on tablet
+      - name: desktop
+        type: number
+        description: Number of columns on desktop
+  - name: gap
+    type: object
+    description: Gap between columns
+    fields:
+      - name: x
+        type: text
+        description: Horizontal gap (e.g., "1rem")
+      - name: y
+        type: text
+        description: Vertical gap (e.g., "1rem")
+  - name: rowGap
+    type: text
+    description: Override vertical gap
+  - name: columnGap
+    type: text
+    description: Override horizontal gap
+  - name: direction
+    type: select
+    description: Flex direction
+    options:
+      - row
+      - column
+      - row-reverse
+      - column-reverse
+  - name: wrap
+    type: select
+    description: Flex wrap behavior
+    options:
+      - nowrap
+      - wrap
+      - wrap-reverse
+  - name: alignItems
+    type: select
+    description: Align items
+    options:
+      - start
+      - center
+      - end
+      - stretch
+      - baseline
+  - name: justifyContent
+    type: select
+    description: Justify content
+    options:
+      - start
+      - center
+      - end
+      - between
+      - around
+      - evenly
+  - name: alignContent
+    type: select
+    description: Align content
+    options:
+      - start
+      - center
+      - end
+      - between
+      - around
+      - stretch
+  - name: fluid
+    type: boolean
+    description: Make container fluid width
+  - name: maxWidth
+    type: text
+    description: Maximum width of container
+  - name: padding
+    type: text
+    description: Padding value
+  - name: margin
+    type: text
+    description: Margin value
+  - name: backgroundColor
+    type: text
+    description: Background color
+  - name: className
+    type: text
+    description: Additional CSS classes
+  - name: breakpoints
+    type: object
+    description: Custom breakpoint values
+    fields:
+      - name: mobile
+        type: text
+        description: Mobile breakpoint
+      - name: tablet
+        type: text
+        description: Tablet breakpoint
+      - name: desktop
+        type: text
+        description: Desktop breakpoint
+  - name: reverseOnMobile
+    type: boolean
+    description: Reverse column order on mobile
+  - name: animateEntrance
+    type: boolean
+    description: Enable entrance animation
+  - name: animationDelay
+    type: number
+    description: Base animation delay in milliseconds
+  - name: staggered
+    type: boolean
+    description: Enable staggered animation for children 

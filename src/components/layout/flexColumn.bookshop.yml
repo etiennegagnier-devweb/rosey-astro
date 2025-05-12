@@ -1,0 +1,88 @@
+name: Flex Column
+description: A flexible column component with customization options
+icon: view_column
+fields:
+  - name: width
+    type: text
+    description: Width of the column (e.g., "100%", "50%")
+  - name: grow
+    type: number
+    description: Flex grow value
+  - name: shrink
+    type: number
+    description: Flex shrink value
+  - name: basis
+    type: text
+    description: Flex basis value (e.g., "auto", "0")
+  - name: order
+    type: number
+    description: Order of the column
+  - name: widths
+    type: object
+    description: Responsive widths for different breakpoints
+    fields:
+      - name: mobile
+        type: text
+        description: Width on mobile devices
+      - name: tablet
+        type: text
+        description: Width on tablet devices
+      - name: desktop
+        type: text
+        description: Width on desktop devices
+  - name: hide
+    type: select
+    description: Hide on specific breakpoints
+    options:
+      - none
+      - mobile
+      - tablet
+      - desktop
+  - name: alignSelf
+    type: select
+    description: Self alignment
+    options:
+      - auto
+      - start
+      - center
+      - end
+      - stretch
+      - baseline
+  - name: padding
+    type: text
+    description: Padding value (e.g., "1rem", "2rem")
+  - name: margin
+    type: text
+    description: Margin value
+  - name: backgroundColor
+    type: text
+    description: Background color
+  - name: className
+    type: text
+    description: Additional CSS classes
+  - name: shadow
+    type: select
+    description: Box shadow style
+    options:
+      - none
+      - sm
+      - md
+      - lg
+  - name: rounded
+    type: select
+    description: Border radius style
+    options:
+      - none
+      - sm
+      - md
+      - lg
+      - full
+  - name: border
+    type: boolean
+    description: Show border
+  - name: borderColor
+    type: text
+    description: Border color
+  - name: animationDelay
+    type: number
+    description: Animation delay in milliseconds 
