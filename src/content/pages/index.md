@@ -81,5 +81,47 @@ content_blocks:
       alt_text: An image
     flipped: true
     button:
-flex_columns: []
+flex_columns:
+  - _bookshop_name: flexColumn
+    width: 50
+    grow: '1'
+    shrink: '0'
+    basis: '0'
+    order:
+    widths:
+      mobile:
+      tablet:
+      desktop:
+    hide:
+    alignSelf:
+    padding:
+    margin:
+    backgroundColor:
+    className:
+    shadow:
+    rounded:
+    border:
+    borderColor:
+    animationDelay:
+  - _bookshop_name: flexColumn
+    width: 50
+    grow:
+    shrink:
+    basis:
+    order:
+    widths:
+      mobile:
+      tablet:
+      desktop:
+    hide:
+    alignSelf:
+    padding:
+    margin:
+    backgroundColor:
+    className:
+    shadow:
+    rounded:
+    border:
+    borderColor:
+    animationDelay:
 ---
